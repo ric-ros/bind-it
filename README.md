@@ -1,5 +1,7 @@
 ## THIS WAS PART OF AN EXCERCISE
 
+<a href="https://ric-ros.github.io/bind-it/">Demo here!</a>
+
 Bind it!
 
 In this app:
