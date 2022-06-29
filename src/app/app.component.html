@@ -1,0 +1,37 @@
+<div
+  class="container-fluid"
+  [ngClass]="{
+    'bg-start': gameStarted,
+    'bg-stop': gameStarted === false && anyNumbers
+  }"
+>
+  <div class="row">
+    <div class="col-12">
+      <h2>Bind it!</h2>
+      <p>Simple game (0 players) for some logics in AngularJS</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 text-center">
+      <app-game-control
+        (gameStarted)="onGameStarted()"
+        (gameStopped)="onGameStopped()"
+        (resetGame)="onGameReset()"
+        [anyNumber]="anyNumbers"
+      ></app-game-control>
+    </div>
+  </div>
+  <div
+    class="row scrollable"
+    #scrollable
+    [scrollTop]="scrollable.scrollHeight"
+    style="margin-top: 0.5em"
+  >
+    <div class="col-6">
+      <app-even [evenNumbers]="evenNumbers"></app-even>
+    </div>
+    <div class="col-6">
+      <app-odd [oddNumbers]="oddNumbers"></app-odd>
+    </div>
+  </div>
+</div>

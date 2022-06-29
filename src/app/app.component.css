@@ -1,0 +1,35 @@
+.container-fluid {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+.bg-start {
+  background-color: #98faff;
+}
+
+.bg-start li {
+  background-color: #d9fdff;
+}
+
+.bg-stop {
+  background-color: #616161;
+  color: whitesmoke;
+}
+
+.bg-stop li {
+  background-color: #4e4e4e;
+  color: whitesmoke;
+}
+
+.bg-reset {
+  background-color: darkgray;
+}
+
+.scrollable {
+  max-height: 30vh;
+  overflow-y: auto;
+}
